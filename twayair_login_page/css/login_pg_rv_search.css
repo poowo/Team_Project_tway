@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/* Safe Area */
+.w1200 {
+    width: 1200px; 
+    margin: 0 auto;
+    border: none;
+}
+
+/* 공통 CSS */
+body {
+    font-family: 'Noto Sans KR',sans-serif;
+}
+#wrap {
+    max-width: 1920px;
+    
+}
+/* 컨텐츠 크기 */
+#content1,
+#content2,
+#content3,
+#content4 {
+    width: 1010px;
+}
+
+/* 타이틀 로그인 */
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1A1A1A;
+    padding: 56px 0;
+}
+
+/* 텝메뉴 리스트 */
+.tab_menu_list {
+    width: 250px;
+    height: 50px;
+}
+
+/* Content 1 */
+form .con1 {
+    margin-top: 50px;
+}
+
+/* 아이디,비밀번호 입력 */
+#content1 fieldset {
+    width: 400px;   
+}
+#content1 fieldset ul {
+    width: 400px;
+}
+#content1 fieldset ul li input {
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-left: 80px; 
+}
+
+/* 아이디 저장 */
+#content1 .id_save {
+    margin-left: 120px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+/* 아이디 저장 체크 이미지 */
+.checkimg {
+    width: 20px;
+    height: 20px;
+}
+.form_left {
+    /* 플롯 */
+    float: left;
+}
+/* 로그인박스 */
+.login_box {
+    color: white;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+    background-color: #D22C26;
+    border-radius: none;
+    text-align: center;
+}
+
+/* 회원가입,아이디찾기,비밀번호찾기 */
+.log_util {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.log_util li a {    
+    font-size: 12px;
+    margin-left: 30px;
+}
+.log_util li>a:after {
+    content: "|";
+    display: inline-block;
+    padding-left: 1.2vw;
+    
+}
+.log_util li:last-child a:after {
+    content: "";
+    display: inline-block;
+}
+.log_util li {
+    /* 플롯 */
+    float: left;
+}
+
+/* SNS서비스 계정으로 로그인 */
+.sns_wrap {
+    /* 플롯 */
+    float: left;
+    margin-left: 30px;
+    border: 1px dotted gray;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+.sns_wrap .tit {
+    margin-left: 140px;
+}
+.sns_list {
+    padding: 20px;
+    margin-top: -40px;
+}
+.sns_list li {
+    /* 플롯 */
+    float: left;    
+    margin: 30px;
+}
+
+/* 휴대폰 로그인 광고 이미지 */
+.ad_phone {
+    text-align: center;
+}
+
+/* 세로 경계선 */
+.line {
+    margin-top: 150px;
+}
+
+
+
+/* 텝메뉴 2 */
+
+/* 전체박스 */
+.form_nonmem {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 30px;  
+}
+/* 이메일 박스 */
+.email_text .email_box {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    
+}
+/* 보안문자 이미지박스 */
+.captchar {
+    border: 1px solid gray;
+    width: 100%;
+    /* width: 458px; */
+    height: 60px;
+    
+}
+
+/* 보안문자 텍스트 박스 전체 */
+.captchar_text {
+    
+    margin-top: 10px;
+}
+/* 보안문자 텍스트 */
+.captchar_text input {
+    width: 240px;
+    height: 43px;
+    
+    
+}
+/* 보안문자 음성듣기 */
+.captchar_text img {
+    border: 1px solid gray;
+    padding: 4px;
+}
+/* 보안문자 새로고침 */
+.captchar_text .btn_reload {
+    width: 210px;
+    height: 40px;
+    background: #fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+/* 개인정보 수집이용 박스 */
+.personal_info1 h3 {
+    margin-bottom: 20px;
+}
+.join_wrap .inside {
+    border: 1px solid gray;    
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.btn_reseravtion ul a:first-child li {
+    color: white;
+    background-color: #D22C26;
+    border-radius: none;
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+}
+.btn_reseravtion ul a:last-child li {
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+.rev_foot p {
+    font-size: 12px;
+}
+.rev_foot p span {
+    color: red;
+}
+
+
+/* 텝메뉴 3 */

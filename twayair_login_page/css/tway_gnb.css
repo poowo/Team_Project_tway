@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* 공통부분 */
+#wrap{
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR',sans-serif;
+}
+.w1200{
+  width: 1200px;
+  margin: 0 auto;
+}
+.w1140{
+  width: 1140px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+button{
+  cursor: pointer;
+}
+/* /공통부분 */
+header{
+  position: relative;
+}
+
+header .gnb{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  /* 통합작업시 오류 수정 */
+  padding-top: 0;
+}
+header .gnb>h1{
+  padding-top: 25px;
+    /* 통합작업시 오류 수정 */
+  padding-bottom: 0;
+}
+header .gnb>nav{
+  width: 820px;
+}
+header .gnb>article{
+  width: 142px
+}
+header .gnb nav>ul{
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+}
+
+header .gnb nav>ul .depth2{
+  width: 100%;
+  text-align-last: left;
+  background-color: #fff;
+  color: #000;
+  border-top: 1px solid #ccc;
+  box-shadow: 0px 10px 10px #ccc;
+  /* 포지션 */
+  padding-left: 20px;
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  display: none;
+  padding: 10px 0;
+}
+header .gnb nav>ul .depth2>ul{
+  display: flex;
+  flex-flow: row wrap;
+}
+header .gnb nav>ul .depth2>ul>li{
+  width: 30%;
+  line-height: 50px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-right: 1px solid #ccc;
+}
+header .gnb nav>ul .depth2>ul>li:nth-child(3n){
+  border-right: none;
+}
+header .gnb nav>ul .depth2 .depth3{
+  font-size: 14px;
+  line-height: 30px;
+  color: #777;
+}
+header .gnb nav>ul>li{
+  line-height: 80px;
+}
+
+header .gnb>article>ul{
+  height: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+header .gnb>article>ul li a{
+  padding-right: 20px;
+}
+header .gnb>article>ul li span{
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 5px;
+}

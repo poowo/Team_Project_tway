@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/* Safe Area */
+.w1200 {
+    max-width: 1920px;
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+/* 제목 */
+.search_title {
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    font-weight: 700;
+}
+/* 주의사항 */
+.memo {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.memo .title_left {
+    /* 플롯 */
+    float: left;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.memo .title_right {
+    /* 플롯 */
+    float: right;
+    font-size: 14px;
+    color: #D22C26;
+    margin-bottom: 30px;
+}
+
+/* 예약검색 표 */
+.search {
+    margin-bottom: 30px;
+}
+.search table, tr, td {
+    border-collapse: collapse;
+    padding: 10px;
+    border-bottom: 1px solid rgb(236, 229, 229);
+    
+}
+.search table tr:first-child {
+    border-top: 1px solid #000;
+}
+.search table .table_title {
+    background-color: #f5f5f5;
+    width: 180px;
+    padding: 30px;
+}
+.search table .table_title span {
+    color: red;
+}
+.search table td input  {
+    padding-left: 20px;
+    margin-right: 10px;
+    
+}
+/* table 텍스트 */
+#rev_num {
+    width: 650px;
+    height: 50px;
+    margin-top: -10px;
+    border: 1px solid rgb(128, 128, 128);
+}
+#lastName {
+    width: 320px;
+    height: 50px;
+    border: 1px solid rgb(128, 128, 128);
+}
+#firstName {
+    width: 320px;
+    height: 50px;
+    border: 1px solid rgb(128, 128, 128);
+}
+/* 추가 버튼 */
+.btn_add {
+    width: 80px;
+    height: 50px;
+    line-height: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 3px;
+}
+/* 확인버튼 */
+.btn_wrap {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+}
+.btn_ok {
+    background-color: #D22C26;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+/* 알아두세요 */
+.info_title img:first-child {
+    margin-top: 8px;
+}
+.info_title {
+    border: 1px solid rgb(236, 229, 229);
+    padding: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    
+}
+.info_text {
+    display: none;
+    border: 1px solid rgb(236, 229, 229);
+    padding: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+.info_title img:last-child {
+    margin-left: 990px;
+    width: 30px;
+}
+
+#footer {
+    border-top: 1px solid rgb(236, 229, 229);
+}

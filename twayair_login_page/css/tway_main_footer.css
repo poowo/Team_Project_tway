@@ -1,0 +1,259 @@
+@charset "utf-8";
+body {
+    font-family: 'Noto Sans KR','Roboto','Nanum Gothic', sans-serif;
+}
+.w1200 {
+    max-width: 1920px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.covid {
+    margin-top: 50px;
+}
+.section_notice {
+    margin-bottom: 50px;
+}
+/* 공지사항 메인 */
+.notice_wrap {
+    margin-top: 50px;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+}
+.notice_main {
+    width: 700px;
+    height: 200px;
+}
+.notice {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.divider {
+    margin-top: 12px;
+    border-bottom: 1px solid #000;
+}
+.notice h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+/* 공지사항 리스트 */
+.notice_list .pin {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid lightgray;
+    /* 플롯 */
+    float: left;
+}
+.notice_content {
+    width: 654px;
+    /* 플롯 */
+    float: right;
+}
+.notice_content .con  {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2.5;
+    /* 플롯 */
+    float: left;
+}
+.notice_content .day {
+    font-size: 14px;
+    line-height: 3;
+    margin-right: 15px;
+    color: rgb(29, 29, 29);
+    /* 플롯 */
+    float: right;
+}
+/* SNS */
+.notice_sns {
+    width: 450px;
+    height: 204px;
+    margin-left: 50px;
+}
+.notice_right h2 {
+    height: 39px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.notice_sns_link {
+    text-align: center;
+}
+.notice_sns_link li {
+    padding: 36px 40px;
+    /* 플롯 */
+    float: left;
+}
+.notice_sns_link li img {
+    width: 70px;
+    height: 70px;
+}
+/* 예약센터 */
+#footer {
+    margin-top: 120px;
+    /* 위치기준값 */
+    position: relative;
+}
+.footer_info{
+    padding: 18px 0;
+}
+.reservation {
+    /* 플롯 */
+    float: left;
+}
+.reservation .rev {
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: #eaeaea;
+    display: inline-block;
+    vertical-align: middle;
+}
+.reservation .num {
+    color: crimson;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.reservation .time {
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgb(26, 26, 26);
+    display: inline-block;
+    vertical-align: middle;
+}
+.f_site {
+    /* 플롯 */
+    float: right;
+}
+.main_list {
+    display: inline-block;
+    padding: 0px 1px 17px;
+    width: 180px;
+    height: 31px;
+    font-size: 14px;
+    border-bottom: 2px solid #000;
+    background: url('../images/p_images/ico_select.png') 100% 4px no-repeat;
+    box-sizing: border-box;
+}
+.list_link {
+    display: none;
+    /* 포지션 */
+    position: absolute;
+    padding: 10px;
+    width: 180px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    z-index: 5;
+}
+.list_link li {
+    padding: 5px;
+    font-size: 14px;
+}
+.list_link li:hover {
+    font-weight: 500;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+/* 회사소개 */
+.footer_list {
+    padding: 40px;
+    background-color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.footer_link ul li {
+    width: 25%;
+    /* 플롯 */
+    float: left;
+}
+.footer_link strong{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer_link  .dep2 {
+    margin-right: 30px;
+    /* 플롯 */
+    float: left;
+}
+.footer_link  .dep2 dd {
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+.footer_link  .dep2 dd:hover {
+    color: gray;
+    cursor: pointer;
+}
+.footer_link  .dep2 dd span {
+    color:crimson;
+}
+.footer_link  .dep2 dd span:hover {
+    color: red;
+    cursor: pointer;
+}
+.footer_link ul li:nth-child(2){
+    padding-left: 30px;
+    border-left: 1px solid lightgray;
+}
+.footer_link ul li:nth-child(3){
+    padding-left: 30px;
+    border-left: 1px solid lightgray;
+}
+.footer_link ul li:nth-child(4){
+    padding-left: 30px;
+    border-left: 1px solid lightgray;
+}
+/* 푸터 하단 */
+.footer_end {
+    padding-bottom: 50px;
+}
+.footer_logo {
+    /* 플롯 */
+    float: left;
+}
+.footer_content {
+    margin-left: 60px;
+    margin-right: 60px;
+    /* 플롯 */
+    float: left;
+}
+.footer_content p {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.footer_content p:nth-child(3) {
+    margin-left: 10px;
+}
+.footer_content span {
+    margin: 10px;
+}
+.logo img:nth-child(1) {
+    width: 100px;
+    height: 70px;
+}
+.logo img:nth-child(2) {
+    width: 100px;
+    height: 100px;
+}
+.sns_link {
+    /* 플롯 */
+    float: left;
+    margin-left: 380px;
+    margin-top: -15px;
+}
+.sns_link ul li {
+    /* 플롯 */
+    float: left;
+    margin: 10px;
+    
+}
+.copy {
+    font-size: 12px;
+    color: #1A1A1A;
+    margin-top: 35px;
+}

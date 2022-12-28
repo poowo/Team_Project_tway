@@ -1,0 +1,65 @@
+@charset "utf-8";
+#wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR',sans-serif;
+  }
+
+.w1200 {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;}
+
+.main {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 0 auto;
+    background: #ffffff;}
+
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;}
+
+/*라디오버튼 숨김*/
+#tab1,
+#tab2,
+#tab3,
+#tab4 {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;}
+
+label:hover {
+    color: #D22C26;
+    cursor: pointer;}
+
+/*input 클릭시, label 스타일*/
+input:checked + label {
+      color: #555;
+      border: 1px solid #ddd;
+      border-top: 2px solid #D22C26;
+      border-bottom: 1px solid #ffffff;}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2
+{
+    display: block;}
