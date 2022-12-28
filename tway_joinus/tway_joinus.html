@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="kmj">
+  <meta name="description" content="Portfolio, RWD Template">
+  <title>회원가입 개인정보입력</title>
+  <!-- 폰트어썸. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- favicon. 인터넷 탭. 페이지이름 옆에 뜨는 아이콘 탭에  -->
+  <link rel="shortcut icon" href="./images/favicon/tway_fav35X27.png">
+  <!-- 노토산스 kr 이 특정브라우저에서 적용이 안되던걸 수정. -->
+  <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+  <!-- system 폰트적용 -->
+  <link rel="stylesheet" href="./css/system_font.css">
+  <!-- 페이지css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/tway_joinus.css">
+  <link rel="stylesheet" href="./css/tway_gnb.css">
+    <!-- JS -->
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+  <header>
+  <section class="gnb w1200">
+      <h1><a href="../tway_main_6.html"><img src="https://contents-image.twayair.com/homepage/images/common/top_logo.png" alt="logo"></a></h1>   
+      <nav>
+          <ul>
+              <li>
+                  <a href="#">항공권&nbsp;예매</a>
+                  <div class="depth2">
+                      <ul class="w1200">
+                          <li><a href="#">항공권&nbsp;예매</a></li>
+                          <li><a href="#">이벤트/프로모션</a></li>
+                          <li><a href="#">운임&nbsp;및&nbsp;수수료&nbsp;안내</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <a href="#">나의&nbsp;예약</a>
+                  <div class="depth2 ">
+                      <ul class="w1200">
+                          <li><a href="../twayair_login_page/tway_login_reservation_search.html">예약&nbsp;조회</a></li>
+                          <li><a href="../twayair_login_page/tway_login_online.html">온라인&nbsp;체크인</a></li>
+                          <li><a href="#">부가서비스&nbsp;추가&nbsp;구매</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <a href="#">서비스&nbsp;안내</a>
+                  <div class="depth2 ">
+                      <ul class="w1200">
+                          <li>
+                              <a href="#">여행&nbsp;준비</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <li><a href="#">항공권 예매 안내</a></li>
+                                      <li><a href="#">단체 항공권 예매 안내</a></li>
+                                      <li><a href="#">가족 동반 여행</a></li>
+                                      <li><a href="#">도움이 필요한 고객</a></li>
+                                      <li><a href="#">혼자 여행하는 어린이</a></li>
+                                      <li><a href="#">t'pet(반려동물 동반 여행)</a></li>
+                                      <li><a href="#">티웨이페이</a></li>
+                                      <li><a href="#">항공기 정보</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <a href="#">온라인&nbsp;체크인</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <!-- (li>a[href=#])*8 -->
+                                      <li><a href="#">운항스케줄 조회</a></li>
+                                      <li><a href="#">출/도착 조회</a></li>
+                                      <li><a href="#">셀프 체크인 안내</a></li>
+                                      <li><a href="#">온라인 체크인 안내</a></li>
+                                      <li><a href="#">탑승 수속 안내</a></li>
+                                      <li><a href="#">공항 카운터 정보</a></li>
+                                      <li><a href="#">t'way 라운지</a></li>
+                                      <li><a href="#">코로나 19 종합 안내</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <a href="#">부가서비스&nbsp;추가&nbsp;구매</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <!-- (li>a[href=#])*8 -->
+                                      <li><a href="#">부가서비스 번들 구매</a></li>
+                                      <li><a href="#">사전좌석 구매</a></li>
+                                      <li><a href="#">수하물 추가 구매</a></li>
+                                      <li><a href="#">기내식 사전 주문</a></li>
+                                      <li><a href="#">결제시한연장 서비스</a></li>
+                                      <li><a href="#">옆좌석 구매</a></li>
+                                      <li><a href="#">t'carrier(펫 운송용기)/포장용 비닐 구매</a></li>
+                                      <li><a href="#">t'care 서비스</a></li>
+                                      <li><a href="#">원클릭 여행자 보험</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <a href="#">수하물&nbsp;안내</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <!-- (li>a[href=#])*8 -->
+                                      <li><a href="#">무료 수하물</a></li>
+                                      <li><a href="#">초과 수하물</a></li>
+                                      <li><a href="#">특수 수하물</a></li>
+                                      <li><a href="#">운송 제한 물품</a></li>
+                                      <li><a href="#">수하물 배상</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <a href="#">부가서비스&nbsp;추가&nbsp;구매</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <!-- (li>a[href=#])*8 -->
+                                      <li><a href="#">기내 제공 서비스</a></li>
+                                      <li><a href="#">t'shop</a></li>
+                                      <li><a href="#">기내 면세품 예약 및 구매 안내</a></li>
+                                      <li><a href="#">channel t'</a></li>
+                                      <li><a href="#">기내 이벤트</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <a href="#">온라인면세점</a>
+                  <div class="depth2">
+                      <ul class="w1200">
+                          <li>
+                              <a href="#">카테고리</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <li><a href="#">주류</a></li>
+                                      <li><a href="#">화장품 & 향수</a></li>
+                                      <li><a href="#">쥬얼리 & 선물용품</a></li>
+                                      <li><a href="#">건강제품류</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <a href="#">나의&nbsp;주문</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <li><a href="#">주문조회</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li><a href="../tway_event/event_start.html">이벤트</a></li>
+                          <li><a href="#">공지사항</a></li>
+                          <li>
+                              <a href="#">이용안내</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <li><a href="../tway_Q&A/tway_faq.html">FAQ</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <a href="../tway_event/event_start.html">이벤트</a>
+                  <div class="depth2">
+                      <ul class="w1200">
+                          <li><a href="../tway_event/event_start.html">이벤트/프로모션</a></li>
+                          <li>
+                              <a href="#">쿠폰</a>
+                              <div class="depth3">
+                                  <ul>
+                                      <li><a href="#">쿠폰안내</a></li>
+                                      <li><a href="#">쿠폰북</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <a href="#">제휴</a>
+                  <div class="depth2">
+                      <ul class="w1200">
+                          <li><a href="#">호텔</a></li>
+                          <li><a href="#">렌터카</a></li>
+                          <li><a href="#">금융 및 여행자보험</a></li>
+                          <li><a href="#">쇼핑 및 편의</a></li>
+                          <li><a href="#">액티비티</a></li>
+                          <li><a href="#">OTT & WIFI</a></li>
+                      </ul>
+                  </div>
+              </li>
+          </ul>
+      </nav>
+      <article>
+          <ul>
+              <li>
+                  <h6><span>한국</span>|<span>한국어</span></h6>
+                  <div class="lang">
+                  </div>
+              </li>
+              <li>
+                  <a href="../twayair_login_page/tway_login_tabmenu.html"><img src="https://contents-image.twayair.com/homepage/images/ico/ico_top_login.png" alt="로그인"></a>
+                  <a href="#"><img src="https://contents-image.twayair.com/homepage/images/ico/ico_top_search.png" alt="검색"></a>
+                  <a href="#" class="no_pr"><img src="https://contents-image.twayair.com/homepage/images/ico/ico_top_allmenu.png" alt="사이트맵"></a>
+              </li>
+          </ul>
+      </article>
+  </section>
+  <article id="sliderbox">
+  </article>
+  <aside class="booking">
+    <div class="w1200">
+      <div class="line_1st cf">
+        <ul>
+          <li>
+            <input type="radio" name="way" id="round_trip" value="왕복" checked>
+            <label for="round_trip">왕복</label>
+          </li>
+          <li>
+            <input type="radio" name="way" id="one_way" value="편도">
+            <label for="one_way">편도</label>
+          </li>
+          <li>
+            <input type="radio" name="way" id="two_way" value="다구간">
+            <label for="two_way">다구간</a></label>
+          </li>
+          <li>
+            <input type="checkbox" name="member" id="member" value="단체(10명이상)">
+            <label for="member">단체(10명이상)<i class="fa fa-check-circle-o" aria-hidden="true"></i></label>
+          </li>
+        </ul>
+        <div>
+          <h3>
+            <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;&nbsp;할인코드
+            <div class="sel_txt">
+              <p>할인 코드란?</p>
+              <p>
+                티웨이항공 탑승 고객을 대상으로 특정기간동안 <br>
+                추가 할인을 제공해 드리는 제도입니다. <br>
+                예약 시 사전에 안내된 코드를 입력하시면, <br>
+                할인가격이 적용된 항공편을 선택하실수 있습니다.
+              </p>
+            </div>
+          </h3>
+          <input type="text" placeholder="할인코드 입력">
+          <span><a href="#none">할인코드&nbsp;규정</a></span>
+        </div>
+      </div>
+      <ul class="line_2nd">
+        <li id="start">
+          <img src="./images/icon/ico_header_start.png" alt="출발비행기">
+          <input type="text" id="air_start" placeholder="출발지">
+          <img src="./images/icon/ico_btn_pin.png" alt="위치">
+          <div class="country">
+            <h3><input type="text" placeholder="출발지를 입력해주세요"></h3>
+            <nav>
+              <h4><img src="https://contents-image.twayair.com/homepage/images/ico/ico_like_on.png" alt="즐겨찾기 아이콘">&nbsp;&nbsp;즐겨 찾는 노선</h4>
+              <ul class="country_left">
+                <li>
+                  <input type="radio" name="country_l" id="skr" checked>
+                  <label for="skr" class="cf">대한민국<span>></span></label>
+                  <ul class="country_right">
+                    <li>서울/인천</li>
+                    <li>서울/김포</li>
+                    <li>대구</li>
+                    <li>제주</li>
+                    <li>청주</li>
+                    <li>양양</li>
+                    <li>광주</li>
+                    <li>부산</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_l" id="jap" >
+                  <label for="jap" class="cf">일본<span>></span></label>
+                  <ul class="country_right">
+                    <li>오사카/간사이</li>
+                    <li>도쿄/나리타</li>
+                    <li>후쿠오카</li>
+                    <li>산포로</li>
+                    <li>사가</li>
+                    <li>구마모토</li>
+                    <li>가고시마</li>
+                    <li>나고야</li>
+                    <li>오이타</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_l" id="nea" >
+                  <label for="nea" class="cf">동북아시아<span>></span></label>
+                  <ul class="country_right">
+                    <li>홍콩</li>
+                    <li>옌지</li>
+                    <li>지난</li>
+                    <li>타이베이/타오위안</li>
+                    <li>타이베이/송산</li>
+                    <li>우한</li>
+                    <li>원저우</li>
+                    <li>타이중</li>
+                    <li>장자제</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_l" id="sea" >
+                  <label for="sea" class="cf">동남아시아<span>></span></label>
+                  <ul class="country_right">
+                    <li>싱가포르</li>
+                    <li>방콕/수완나폼</li>
+                    <li>다낭</li>
+                    <li>나트랑</li>
+                    <li>하노이</li>
+                    <li>보라카이/칼리보</li>
+                    <li>호찌민</li>
+                    <li>세부</li>
+                    <li>비엔티안</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_l" id="cea" >
+                  <label for="cea" class="cf">러시아/몽골/중앙아시아<span>></span></label>        
+                  <ul class="country_right">
+                    <li>울란바타르</li>
+                    <li>블라디보스토크</li>
+                    <li>하바로브스크</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_l" id="ocn" >
+                  <label for="ocn" class="cf">대양주/괌/사이판<span>></span></label>
+                  <ul class="country_right">
+                    <li>괌</li>
+                    <li>사이판</li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <span class="bd_red"></span>
+        </li>
+        <li id="end">
+          <img src="./images/icon/ico_header_end.png" alt="도착비행기">
+          <input type="text" id="air_end" placeholder="도착지">
+          <img src="./images/icon/ico_btn_pin.png" alt="위치">
+          <div class="country">
+            <h3><input type="text" placeholder="도착지를 입력해주세요"></h3>
+            <nav>
+              <h4><img src="https://contents-image.twayair.com/homepage/images/ico/ico_like_on.png" alt="즐겨찾기 아이콘">&nbsp;&nbsp;즐겨 찾는 노선</h4>
+              <ul class="country_left">
+                <li>
+                  <input type="radio" name="country_r" id="skr_out" checked>
+                  <label for="skr_out" class="cf">대한민국<span>></span></label>
+                  <ul class="country_right">
+                    <li>서울/인천</li>
+                    <li>서울/김포</li>
+                    <li>대구</li>
+                    <li>제주</li>
+                    <li>청주</li>
+                    <li>양양</li>
+                    <li>광주</li>
+                    <li>부산</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_r" id="jap_out" >
+                  <label for="jap_out" class="cf">일본<span>></span></label>
+                  <ul class="country_right">
+                    <li>오사카/간사이</li>
+                    <li>도쿄/나리타</li>
+                    <li>후쿠오카</li>
+                    <li>산포로</li>
+                    <li>사가</li>
+                    <li>구마모토</li>
+                    <li>가고시마</li>
+                    <li>나고야</li>
+                    <li>오이타</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_r" id="nea_out" >
+                  <label for="nea_out" class="cf">동북아시아<span>></span></label>
+                  <ul class="country_right">
+                    <li>홍콩</li>
+                    <li>옌지</li>
+                    <li>지난</li>
+                    <li>타이베이/타오위안</li>
+                    <li>타이베이/송산</li>
+                    <li>우한</li>
+                    <li>원저우</li>
+                    <li>타이중</li>
+                    <li>장자제</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_r" id="sea_out" >
+                  <label for="sea_out" class="cf">동남아시아<span>></span></label>
+                  <ul class="country_right">
+                    <li>싱가포르</li>
+                    <li>방콕/수완나폼</li>
+                    <li>다낭</li>
+                    <li>나트랑</li>
+                    <li>하노이</li>
+                    <li>보라카이/칼리보</li>
+                    <li>호찌민</li>
+                    <li>세부</li>
+                    <li>비엔티안</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_r" id="cea_out" >
+                  <label for="cea_out" class="cf">러시아/몽골/중앙아시아<span>></span></label>        
+                  <ul class="country_right">
+                    <li>울란바타르</li>
+                    <li>블라디보스토크</li>
+                    <li>하바로브스크</li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="radio" name="country_r" id="ocn_out" >
+                  <label for="ocn_out" class="cf">대양주/괌/사이판<span>></span></label>
+                  <ul class="country_right">
+                    <li>괌</li>
+                    <li>사이판</li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <span class="bd_red"></span>
+        </li>
+        <li class="day">
+          <input type="text" placeholder="2022-10-04" min maxlength="10">
+          &nbsp;~&nbsp;
+          <input type="text" placeholder="2022-10-05" maxlength="10">
+          <img src="./images/icon/ico_btn_date.png" alt="일정">
+          <span class="bd_red"></span>
+        </li>
+        <li>
+          <input type="button" id='total' value="성인:1, 소아:0, 유아:0">
+          <img src="./images/icon/ico_booking_passenger.png" alt="위치">
+          <div class="people">
+            <ul>
+              <li>
+                <h4>성인</h4>
+                <div>
+                  <button class="sub">-</button>
+                  <input type="text" id="ad" value="1">
+                  <button class="add">+</button>
+                </div>
+              </li>
+              <li>
+                <h4>소아</h4>
+                <div>
+                  <button class="sub">-</button>
+                  <input type="text" id="ch" value="0">
+                  <button class="add">+</button>
+                </div>
+              </li>
+              <li>
+                <h4>유아</h4>
+                <div>
+                  <button class="sub">-</button>
+                  <input type="text" id="in" value="0">
+                  <button class="add">+</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <span class="bd_red"></span>
+        </li>
+        <button>조회</button>
+      </ul>
+    </div>
+  </aside>
+  <aside class="root w1200">
+    <h2>
+      <a href="../tway_main_6.html">
+        <img src="./images/icon/ico_path_home.png" alt="HOME"> HOME
+      </a>
+    </h2>
+    <div>
+      <a href="#">회원가입 내 외국인 선택&nbsp;&nbsp;
+      <img src="./images/icon/ico_path_off.png" alt="아래화살표">
+      </a>
+      <nav class="menu_li">
+        <ul>
+          <li><a href="#">회원가입 내/외국인 선택</a></li>
+          <li><a href="#">본인인증</a></li>
+          <li><a href="#">회원가입 약관동의</a></li>
+          <li><a href="#">회원가입 개인정보입력</a></li>
+          <li><a href="#">회원가입 완료</a></li>
+          <li><a href="#">회원가입 메일인증 완료</a></li>
+          <li><a href="#">회원가입 완료 안내 메일</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <script>
+    $('header .gnb nav>ul>li').on('mouseenter',function(){
+        $(this).children().stop().next().slideDown();
+    })
+    $('header .gnb nav>ul>li').on('mouseleave',function(){
+        $(this).children().stop().next().slideUp();
+    })
+    $('.ad p').on('click',function(){
+        $('.ad').hide();
+    })
+    // 스크롤바 위치에 따라 gnb 메뉴 fixed 로 변경/ header .top_ad 높이80으로 만들기 .
+</script>
+  <!-- gnb 부분 넣고 헤더 포지션으로 위로 고정 -->
+</header>
+  <div id="head_holl"></div>
+  <main role="main">
+    <section class="joinus w1200">
+      <h2>개인정보입력</h2>
+      <form action="#">
+        <table class="joinus_table">
+          <caption>회원님의 개인정보를 입력해주시기 바랍니다.</caption>
+          <tr class="id">
+            <th><label for="id">아이디</label></th>
+            <td>
+              <input type="text" id="id" name="id" placeholder="6~20자리, 영대 소문자, 숫자 조합" minlength="6" maxlength="20" required>
+              <button>중복확인</button>
+            </td>
+          </tr>
+          <tr class="fw">
+            <th>비밀번호</th>
+            <td>
+              <input type="password" id="fw1" name="fw" placeholder="8자~20자리, 영대소문자, 숫자, 특수기호 중 2가지 이상 조합" minlength="8" maxlength="20" required>
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호 확인</th>
+            <td>
+              <input type="password" id="fw2" name="fw" placeholder="8자~20자리, 영대소문자, 숫자, 특수기호 중 2가지 이상 조합" minlength="8" maxlength="20" required>
+            </td>
+          </tr>
+          <tr class="name name_ko">
+            <th>국문 성/이름</th>
+            <td>
+              <input type="text" id="name_first_kr" name="name_first"placeholder="국문 성을 입력하세요" required>
+              <input type="text" id="name_sed_kr"placeholder="국문 이름을 입력하세요" required>
+              <p>*반드시 본인의 실명을 입력해주시기 바랍니다. (추후 변경 불가)</p>
+            </td>
+          </tr>
+          <tr class="name name_en">
+            <th>영문 성/이름</th>
+            <td>
+              <input type="text" id="name_first_en" placeholder="영문 성을 입력하세요">
+              <input type="text" id="name_sed_en" placeholder="영문 이름을 입력하세요">
+            </td>
+          </tr>
+          <tr class="human_box">
+            <th>성별</th>
+            <td>
+              <input type="radio" name="human" id="human_m" value="남성" checked>
+              <label for="human_m">남성</label>
+              <input type="radio" name="human" id="human_f" value="여성">
+              <label for="human_f">여성</label>
+            </td>
+          </tr>
+          <tr class="birtday">
+            <th>생년월일</th>
+            <td>
+              <input type="text" id="yy" maxlength="4" placeholder="년도(4자)" required>
+              <select id="mm" aria-label="월" required>
+                <option value>월</option>
+                <option value="1">1월</option>
+                <option value="2">2월</option>
+                <option value="3">3월</option>
+                <option value="4">4월</option>
+                <option value="5">5월</option>
+                <option value="6">6월</option>
+                <option value="7">7월</option>
+                <option value="8">8월</option>
+                <option value="9">9월</option>
+                <option value="10">10월</option>
+                <option value="11">11월</option>
+                <option value="12">12월</option>
+              </select>
+              <input type="text" id="dd" maxlength="2" placeholder="일(4자)" required>
+            </td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td>
+              <input type="email" id="email" placeholder="이메일을 입력하세요.">
+            </td>
+          </tr>
+          <tr class="tel_num">
+            <th>휴대전화</th>
+            <td>
+              <div class="nationality">대한민국(+82)</div>
+              <input type="tel" id="tel" required>
+            </td>
+          </tr>
+          <tr class="loc">
+            <th>거주 지역</th>
+            <td>
+              <input type="text">
+              <button>지역검색</button><br>
+              <select id="local" aria-label="지역">
+                <option value>전체</option>
+                <option value="21">서울특별시</option>
+                <option value="22">부산광역시</option>
+                <option value="23">대구광역시</option>
+                <option value="24">인천광역시</option>
+                <option value="25">광주광역시</option>
+                <option value="26">대전광역시</option>
+                <option value="27">울산광역시</option>
+                <option value="28">세종특별자치시</option>
+                <option value="29">경기도</option>
+                <option value="30">충청북도</option>
+                <option value="31">충청남도</option>
+                <option value="32">전라북도</option>
+                <option value="33">전라남도</option>
+                <option value="34">경상북도</option>
+                <option value="35">경상남도</option>
+                <option value="36">제주특별자치도</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <div class="next_btn w1200"><input type="submit" value="다음"></div>
+      </form>
+    </section>
+  </main>
+        <!-- 푸터  영역 -->
+        <footer id="footer">
+          <div class="footer_info w1200 cf">
+              <!-- 예약센터 -->
+              <div class="reservation">
+                  <span class="rev">티웨이항공 예약센터</span>
+                  <span class="num">1688 - 8686</span>
+                  <span class="time">07:00 ~ 19:00</span>
+              </div>
+              <!-- /예약센터 -->
+              <!-- SNS Content -->
+              <div class="notice_sns">
+                  <div class="notice_sns_link">
+                      <ul>
+                          <li><a href="https://www.facebook.com/twayair" target="_blank"><img src="./images/p_images/ico_fb.png" alt="티웨이 페이스북 페이지"></a></li>
+                          <li><a href="https://www.instagram.com/twayair/" target="_blank"><img src="./images/p_images/ico_ins.png" alt="티웨이 인스타 페이지"></a></li>
+                          <li><a href="https://www.youtube.com/channel/UCEOdVOvRh7iT-ngjX5TVIIg" target="_blank"><img src="./images/p_images/ico_ut.png" alt="티웨이 유튜브 페이지"></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Family link -->
+              <div class="f_site">
+                  <a href="#footer" class="main_list">Family site</a>
+                  <ul class="list_link">
+                      <li><a href="#">항공훈련센터</a></li>
+                      <li><a href="#">예림당</a></li>
+                      <li><a href="#">예림교육</a></li>
+                      <li><a href="#">스마트베어</a></li>
+                      <li><a href="#">와이슈타인</a></li>
+                      <li><a href="#">예림디지털</a></li>
+                      <li><a href="#">티웨이홀딩스</a></li>
+                      <li><a href="#">해여림빌리지</a></li>
+                  </ul>
+              </div>
+              <!-- /Family link -->
+          </div>
+          <!-- 회사소개 -->
+          <div class="footer_list">
+              <div class="footer_link w1200">
+                  <ul class="cf">
+                      <li><a href="#"><strong>회사소개</strong></a>
+                          <dl class="dep2">
+                              <dd><a href="#">티웨이항공 소개</a></dd>
+                              <dd><a href="#">투자정보</a></dd>
+                              <dd><a href="#">채용안내</a></dd>
+                              <dd><a href="#">윤리경영</a></dd>
+                          </dl>
+                          <dl class="dep2">
+                              <dd><a href="#">광고 홍보 영상</a></dd>
+                              <dd><a href="#">사회 공헌</a></dd>
+                              <dd><a href="#">보도자료</a></dd>
+                              <dd><a href="#">항공훈련센터</a></dd>
+                          </dl>
+                      </li>
+                      <li><a href="#"><strong>고객센터</strong></a>
+                          <dl class="dep2">
+                              <dd><a href="#">공지사항</a></dd>
+                              <dd><a href="#">유실물센터</a></dd>
+                              <dd><a href="#">고객의 말씀</a></dd>
+                          </dl>
+                          <dl class="dep2">
+                              <dd><a href="#">제휴문자문의</a></dd>
+                              <dd><a href="#">FAQ</a></dd>
+                              <dd><a href="#">서식자료실</a></dd>
+                          </dl>
+                      </li>
+                      <li><a href="#"><strong>규정 및 약관</strong></a>
+                          <dl class="dep2">
+                              <dd><a href="#">여색운속약관</a></dd>
+                              <dd><a href="#">운임 및 수수료</a></dd>
+                              <dd><a href="#">기타 고지사항</a></dd>
+                          </dl>
+                          <dl class="dep2">
+                              <dd><a href="#">홈페이지 이용약관</a></dd>
+                              <dd><a href="#"><span>개인정보 처리방침</span></a></dd>
+                          </dl>
+                      </li>
+                      <li><a href="#"><strong>기타</strong></a>
+                          <dl class="dep2">
+                              <dd><a href="#">항공교통 이용자서비스 계획</a></dd>
+                              <dd><a href="#">피해구제계획</a></dd>
+                              <dd><a href="#">t'agency</a></dd>
+                          </dl>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <!-- /회사소개 -->
+          <!-- 푸터 하단 -->
+          <div class="footer_end w1200 cf">
+              <div class="footer_logo">
+                  <a href="https://www.twayair.com/app/main"><img src="./images/p_images/티웨이항공.png" alt="티웨이항공 로고"></a>
+              </div>
+              <div class="footer_content">
+                  <p>
+                      <span>대표이사 : 정홍근&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                      <span>사업자등록번호 : 101-81-94800&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                      <span>주소 : 서울시 강서구 하늘길 210 국제화물청사 3층</span>
+                  </p>
+                  <p>
+                      <span>통신판매업신고번호 : 2017-서울강서-1292&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                      <span>개인정보 관리책임자 : 경영본부장 김형이</span>
+                  </p>
+                  <p>Copyright &copy; 2019 t'way Air. All Rights Reserved.</p>
+              </div>
+              <div class="logo">
+                  <a href="http://contents-image.twayair.com/homepage/images/common/tway_wa_certification.pdf"><img src="./images/p_images/WA.png" alt="과학기술정보통신부 로고"></a>
+                  <a href="https://isms.kisa.or.kr/main/"><img src="./images/p_images/ISMS.png" alt="정보보호 관리체계 인증 로고"></a>
+              </div>
+          </div>
+          <!-- /푸터 하단 -->
+      </footer>
+      <!-- /푸터  영역 -->
+</div>
+<script src="./js/tway_joinus.js"></script>
+</body>
+</html>
