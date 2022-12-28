@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mcssam">
+    <meta name="description" content="Portfolio, RWD Template">
+    <title>종료된 이벤트 | 이벤트/프로모션</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon/tway_fav35X27.png">    
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/montblanc_fav144.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/event_page.css">
+    <link rel="stylesheet" href="./css/event_end.css">
+    
+    <!-- 페이지 CSS -->
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./js/prefixfree.min.js"></script> -->
+    <!-- 페이지 JS -->
+    <!-- https://www.twayair.com/app/promotion/event/being -->
+<style>
+    .w1200 {
+        width:1200px;
+        margin:0 auto;
+        /* border: 1px solid #000; */
+    }
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div class="top_redline"></div>
+    <!-- HEADER -->
+    <header>
+        <!-- GNB메뉴 -->
+        <section class="gnb cf">
+            <div class="w1200">
+                <h1>
+                    <a href="../tway_main_6.html"><img src="./images/tway/top_logo.png" alt="티웨이로고"></a>
+                </h1>
+                <ul>
+                    <li class="reserve">항공권&nbsp;예매</li>
+                    <li class="my_reserve">나의&nbsp;예약</li>
+                    <li class="service_instruction">서비스&nbsp;안내</li>
+                    <li class="online_store">온라인면세점</li>
+                    <li class="gnb_evnt"><a href="./event_start.html">이벤트</a></li>
+                    <li class="partnership">제휴</li>
+                </ul>
+                <!-- 회원메뉴 -->
+                <div class="member_menu cf">
+                    <ul>
+                        <li>
+                            한국
+                            <a href="#"><img src="./images/tway/arr_txt_sel.png" alt="한국슬라이드바"></a>
+                        </li>
+                        <li>
+                            한국어
+                            <a href="#"><img src="./images/tway/arr_txt_sel.png" alt="한국어슬라이드바"></a>
+                        </li>
+                        <li>
+                            <a href="../twayair_login_page/tway_login_tabmenu.html"><img src="./images/tway/ico_top_login.png" alt="login"></a>
+                            <img src="./images/tway/ico_top_search.png" alt="search">
+                            <img src="./images/tway/ico_top_allmenu.png" alt="Hamburger" class="hamburgerBtn1">
+                        </li>
+                    </ul>
+                </div>
+                <!-- /회원메뉴 -->
+                <!-- 회원메뉴 클릭시 팝업창-->
+                <div class="korea_popup">
+                    <div class="country">
+                        <form action="#">
+                            <fieldset>
+                                <label for="country" class="blind">나라선택</label>
+                                <select name="country" id="country">
+                                    <optgroup label="나라선택">
+                                        <option value="korean">한국(KOREAN)</option>
+                                        <option value="japan">일본(JAPAN)</option>
+                                        <option value="china">중국(CHINA)</option>
+                                        <option value="laos">라오스(Laos)</option>
+                                    </optgroup>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="language">
+                        <form action="#">
+                            <fieldset>
+                                <label for="language" class="blind">나라선택</label>
+                                <select name="language" id="language">
+                                    <optgroup label="언어선택">
+                                        <option value="html">KOREAN</option>
+                                        <option value="html">ENGLISH</option>
+                                    </optgroup>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="verify">
+                        <a href="#">확인</a>
+                    </div>
+                    <img src="./images/tway/btn_layer_close.png" alt="">
+                </div>
+                <!-- 한국 슬라이드바 선택시 팝업 -->
+                <script>
+                    $('.member_menu ul li').children('a').click(function(){
+         
+                        $('.korea_popup').stop().toggle();
+                    });
+                    $('.korea_popup img').click(function(){
+                        $('.korea_popup').stop().hide();
+                    });
+                </script>
+            </div>
+            <!-- /한국 슬라이드바 선택시 팝업 -->
+            <!-- /회원메뉴 클릭시 팝업창-->
+        </section>
+        <!-- /GNB메뉴 -->
+        <section class="gnb_hover">
+            <!-- 항공권 예매 호버메뉴 -->
+            <article class="reserve_hover w1200">
+                <nav>
+                    <ul>
+                        <li>항공권&nbsp;예매</li>
+                    </ul>
+                    <ul>
+                        <li><a href="./event_start.html">이벤트/프로모션</a></li>
+                    </ul>
+                    <ul>
+                        <li>운임&nbsp;및&nbsp;수수료&nbsp;안내</li>
+                    </ul>
+                </nav>
+            </article>
+            <!-- 항공권 예매 호버메뉴 -->
+            <!-- 나의 예약 호버메뉴 -->
+            <article class="my_reserve_hover w1200">
+                <nav>
+                    <ul><a href="../twayair_login_page/tway_login_reservation_search.html">예약&nbsp;조회</a></ul>
+                    <ul><a href="../twayair_login_page/tway_login_online.html">온라인&nbsp;체크인</a></ul>
+                    <ul>부가서비스&nbsp;추가&nbsp;구매</ul>
+                </nav>
+            </article>
+            <!-- /나의 예약 호버메뉴 -->
+            <!-- 서비스 안내 호버메뉴 -->
+            <article class="service_instruction_hover w1200">
+                <nav>
+                    <ul>여행준비
+                        <li>항공권 예매 안내</li>
+                        <li>단체 항공권 예매 안내</li>
+                        <li>가족 동반 여행</li>
+                        <li>도움이 필요한 고객</li>
+                        <li>혼자 여행하는 어린이</li>
+                        <li>t’pet(반려동물 동반 여행)</li>
+                        <li>티웨이페이</li>
+                        <li>항공기 정보</li>
+                    </ul>
+                    <ul>항공편 및 공항 정보
+                        <li>운항스케줄 조회</li>
+                        <li>출/도착 조회</li>
+                        <li>셀프 체크인 안내</li>
+                        <li>온라인 체크인 안내</li>
+                        <li>탑승 수속 안내</li>
+                        <li>공항 카운터 정보</li>
+                        <li>t’way 라운지</li>
+                        <li>코로나 19 종합 안내</li>
+                    </ul>
+                    <ul>부가서비스
+                        <li>부가서비스 번들 구매</li>
+                        <li>사전좌석 구매</li>
+                        <li>수하물 추가 구매</li>
+                        <li>기내식 사전 주문</li>
+                        <li>결제시한연장 서비스</li>
+                        <li>옆좌석 구매</li>
+                        <li>t'carrier(펫 운송용기)/포장용 비닐 구매</li>
+                        <li>t’care 서비스</li>
+                        <li>원클릭 여행자보험</li>
+                    </ul>
+                    <ul>수하물 안내
+                        <li>무료 수하물</li>
+                        <li>초과 수하물</li>
+                        <li>특수 수하물</li>
+                        <li>기내식 사전 주문</li>
+                        <li>운송 제한 물품</li>
+                        <li>수하물 배상</li>
+
+                    </ul>
+                    <ul>기내 서비스
+                        <li>기내 제공 서비스</li>
+                        <li>t’shop</li>
+                        <li>기내 면세품 예약 및 구매 안내</li>
+                        <li>channel t’</li>
+                        <li>기내 이벤트</li>
+                    </ul>
+                </nav>
+            </article>
+            <!-- /서비스 안내 호버메뉴 -->
+            <!-- 온라인 면세점 호버메뉴 -->
+            <article class="online_store_hover w1200">
+                <nav>
+                    <ul>카테고리
+                        <li>주류</li>
+                        <li>화장품 & 향수</li>
+                        <li>쥬얼리 & 선물용품</li>
+                        <li>건강제품류</li>
+                        <li>t’pet(반려동물 동반 여행)</li>
+                        <li>티웨이페이</li>
+                        <li>항공기 정보</li>
+                    </ul>
+                    <ul>나의 주문
+                        <li>주문 조회</li>
+                    </ul>
+                    <ul>이벤트
+                    </ul>
+                    <ul>공지사항
+                    </ul>
+                    <ul>이용 안내
+                        <li><a href="../tway_Q&A/tway_faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="gnb_evnt_hover w1200">
+                <nav>
+                    <ul>이벤트/프로모션
+                    </ul>
+                    <ul>쿠폰
+                        <li>쿠폰 안내</li>
+                        <li>쿠폰</li>
+                    </ul>
+                </nav>
+            </article>
+            <!-- /온라인 면세점 호버메뉴 -->
+            <!-- 제휴 호버메뉴 -->
+            <article class="partnership_hover w1200">
+                <nav>
+                    <a href="#"><ul>호텔</ul></a>
+                    <a href="#"><ul>렌터카</ul></a>
+                    <a href="#"><ul>금융 및 여행자보험</ul></a>
+                    <a href="#"><ul>쇼핑 및 편의</ul></a>
+                    <a href="#"><ul>액티비티</ul></a>
+                    <a href="#"><ul>OTT & WIFI</ul></a>
+
+                </nav>
+            </article>
+            <!-- /제휴 호버메뉴 -->
+        </section>
+        <!--GNB 호버 스크립트 -->
+        <script>
+            var reserve = $('.reserve');
+                var reserve_hover = $('.reserve_hover');
+            var my_reserve = $('.my_reserve');
+                var my_reserve_hover = $('.my_reserve_hover');
+            var service_instruction = $('.service_instruction');
+                var service_instruction_hover = $('.service_instruction_hover');
+            var online_store = $('.online_store');
+                var online_store_hover = $('.online_store_hover');
+            var gnb_evnt = $('.gnb_evnt');
+                var gnb_evnt_hover = $('.gnb_evnt_hover');
+            var partnership = $('.partnership');
+                var partnership_hover = $('.partnership_hover');
+
+            var gnb_all = [reserve_hover, my_reserve_hover, service_instruction_hover,online_store_hover, gnb_evnt_hover, partnership_hover];
+            console.log(gnb_all);
+            var i = 0;
+            reserve.mouseenter(function(){
+                for(i=0;i<gnb_all.length;i++){
+                    gnb_all[i].hide(0);
+                }
+                $(reserve_hover).stop().slideToggle(200);
+            });
+            my_reserve.mouseenter(function(){
+                for(i=0;i<gnb_all.length;i++){
+                    gnb_all[i].hide(0);
+                }
+                $(my_reserve_hover).stop().slideToggle(200);
+            });
+            service_instruction.mouseenter(function(){
+                for(i=0;i<gnb_all.length;i++){
+                    gnb_all[i].hide(0);
+                }
+                $(service_instruction_hover).stop().slideToggle(200);
+            });
+            online_store.mouseenter(function(){
+                for(i=0;i<gnb_all.length;i++){
+                    gnb_all[i].hide(0);
+                }
+                $(online_store_hover).stop().slideToggle(200);
+            });
+            gnb_evnt.mouseenter(function(){
+                for(i=0;i<gnb_all.length;i++){
+                    gnb_all[i].hide(0);
+                }
+                $(gnb_evnt_hover).stop().slideToggle(200);
+            });
+            partnership.mouseenter(function(){
+                for(i=0;i<gnb_all.length;i++){
+                    gnb_all[i].hide(0);
+                }
+                $(partnership_hover).stop().slideToggle(200);
+            });
+            $('.gnb_hover').mouseleave(function(){
+                for(i=0;i<gnb_all.length;i++){
+                    gnb_all[i].hide(0);
+                }
+            });
+        </script>
+        <!--/GNB 호버 스크립트 -->
+        <!-- /GNB메뉴 -->
+    </header>
+    <!-- HAMBURGER ALL MENU -->
+    <div class="hamburger_all_popup">
+        <section class="all_menu_top">
+            <div class="top_black">
+                <p class="w1200">
+                    <img src="./images/tway/btn_menu_close.png" alt="" class="hamburgerBtn2">
+                </p>
+            </div>
+            <article class="all_menu">
+                <div>
+                    <h2>전체메뉴</h2>
+                </div>
+                <div class="w1200">
+                    <ul>
+                        <li class="reserve">항공권&nbsp;예매</li>
+                        <li class="my_reserve">나의&nbsp;예약</li>
+                        <li class="service_instruction">서비스&nbsp;안내</li>
+                        <li class="online_store">온라인면세점</li>
+                        <li class="gnb_evnt">이벤트</li>
+                        <li class="partnership">제휴</li>
+                    </ul>
+                </div>
+            </article>    
+        </section>
+        <section class="hamburger_all_menu">
+            <article class="all_menu_reserve">
+                <nav class="w1200 cf">
+                    <h2>항공권 예매</h2>
+                    <ul>항공권 예매</ul>
+                    <ul>이벤트/프로모션</ul>
+                    <ul>운임 및 수수료 안내</ul>
+                </nav>
+            </article>
+            <article class="all_menu_my_reserve cf">
+                <nav class="w1200">
+                    <h2>나의 예약</h2>
+                    <ul><a href="../twayair_login_page/tway_login_reservation_search.html">예약 조회</a></ul>
+                    <ul><a href="../twayair_login_page/tway_login_online.html">온라인 체크인</a></ul>
+                    <ul>부가서비스 추가 구매</ul>
+                </nav>
+            </article>
+            <article class="all_menu_service_instruction cf">
+                <nav class="w1200">
+                    <h2>서비스안내</h2>
+                    <ul>
+                        <p>여행준비</p>
+                        <li>항공권 예매 안내</li>
+                        <li>단체 항공권 예매 안내</li>
+                        <li>가족 동반 여행</li>
+                        <li>도움이 필요한 고객</li>
+                        <li>혼자 여행하는 어린이</li>
+                        <li>t’pet(반려동물 동반 여행)</li>
+                        <li>티웨이페이</li>
+                        <li>항공기 정보</li>
+                    </ul>
+                    <ul>
+                        <p>항공편 및 공항 정보</p>
+                        <li>운항스케줄 조회</li>
+                        <li>출/도착 조회</li>
+                        <li>셀프 체크인 안내</li>
+                        <li>온라인 체크인 안내</li>
+                        <li>탑승 수속 안내</li>
+                        <li>공항 카운터 정보</li>
+                        <li>t’way 라운지</li>
+                        <li>코로나 19 종합 안내</li>
+                    </ul>
+                    <ul>
+                        <p>부가서비스</p>
+                        <li>부가서비스 번들 구매</li>
+                        <li>사전좌석 구매</li>
+                        <li>수하물 추가 구매</li>
+                        <li>기내식 사전 주문</li>
+                        <li>결제시한연장 서비스</li>
+                        <li>옆좌석 구매</li>
+                        <li>t'carrier(펫 운송용기)/포장용 비닐 구매</li>
+                        <li>t’care 서비스</li>
+                        <li>원클릭 여행자보험</li>
+                    </ul>
+                    <ul>
+                        <p>수하물 안내</p>
+                        <li>무료 수하물</li>
+                        <li>초과 수하물</li>
+                        <li>특수 수하물</li>
+                        <li>기내식 사전 주문</li>
+                        <li>운송 제한 물품</li>
+                        <li>수하물 배상</li>
+                    </ul>
+                    <ul>
+                        <p>기내 서비스</p>
+                        <li>기내 제공 서비스</li>
+                        <li>t’shop</li>
+                        <li>기내 면세품 예약 및 구매 안내</li>
+                        <li>channel t’</li>
+                        <li>기내 이벤트</li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="all_menu_online_store cf">
+                <nav class="w1200">
+                    <h2>온라인면세점</h2>
+                    <ul>
+                        <p>카테고리</p>
+                        <li>주류</li>
+                        <li>화장품 & 향수</li>
+                        <li>쥬얼리 & 선물용품</li>
+                        <li>건강제품류</li>
+                        <li>t’pet(반려동물 동반 여행)</li>
+                        <li>티웨이페이</li>
+                        <li>항공기 정보</li>
+                    </ul>
+                    <ul>
+                        <p>나의 주문</p>
+                        <li>주문 조회</li>
+                    </ul>
+                    <ul>이벤트</ul>
+                    <ul>공지사항</ul>
+                    <ul>이용 안내
+                        <li>FAQ</li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="all_menu_gnb_evnt cf">
+                <nav class="w1200">
+                    <h2>이벤트</h2>
+                    <ul>이벤트/프로모션</ul>
+                    <ul>
+                        <p>쿠폰</p>
+                        <li>쿠폰 안내</li>
+                        <li>쿠폰</li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="all_menu_partnership cf">
+                <nav class="w1200">
+                    <ul>호텔</ul>
+                    <ul>렌터카</ul>
+                    <ul>금융 및 여행자보험</ul>
+                    <ul>쇼핑 및 편의</ul>
+                    <ul>액티비티</ul>
+                    <ul>OTT & WIFI</ul>
+                </nav>
+            </article>
+        </section>
+    </div>
+    <!-- HAMBURGER ALL MENU TOGGLE SCRIPT -->
+    <script>  
+        $('.hamburgerBtn1').click(function(){
+            $('.hamburger_all_popup').show();
+            $('.hamburgerBtn1').hide();
+            $('main').hide();
+            $('footer').hide();
+        });
+        $('.hamburgerBtn2').click(function(){
+            $('.hamburger_all_popup').hide();
+            $('.hamburgerBtn1').show();
+            $('main').show();
+            $('footer').show();
+        });
+    </script>
+    <!-- /HAMBURGER ALL MENU TOGGLE SCRIPT -->
+    <!-- /HAMBURGER ALL MENU -->
+    <!-- /HEADER -->
+    <!-- MAIN -->
+    <main role="main" class="">
+        <section class="w1200">
+            <div id="middle">
+                <div class="top">
+                    <ul class="choice">
+                        <li onclick="choice(1)">왕복</li>
+                        <li onclick="choice(2)">편도</li>
+                    </ul>
+                    <ul class="choice2">
+                        <li><img src="./images/단체.png" alt=""></li>
+                        <p>단체(10명 이상)</p>
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </ul>
+                    <ul class="choice3">
+                        <li>
+                            <p>?</p>
+                        </li>
+                        <li>
+                            <label for="code_box">할인코드</label>
+                        </li>
+                        <li>
+                            <span>할인코드란?</span> <br>
+                            티웨이항공 <br>
+                            고객 <br>
+                            탑승
+                        </li>
+                        <li>
+                            <input type="text" id="code_box" placeholder="할인코드 입력">
+                        </li>
+                        <p>할인코드 규정</p>
+                        <img src="./images/bg_next.png" alt="화살표">
+                    </ul>
+                </div>
+                <div class="middle">
+                    <div class="search">
+                        <li>
+                            <label for="start"><img src="./images/ico_header_start.png" alt=""></label>
+                            <input type="text" id="start" required autocomplete="off" placeholder="출발지">
+                            <img src="./images/ico_btn_pin.png" alt="">
+                        </li>
+                        <div id="start_box">
+                            <nav>
+                                <label for="insert"><img src="./images/ico_top_search.png" alt=""></label>
+                                <input type="text" id="insert" required autocomplete="off" placeholder="출발지를 입력해주세요">
+                            </nav>
+                            <div class="choice_box">
+                                <ul class="start_box_1">
+                                    <li onclick="country(1)">대한민국</li>
+                                    <li onclick="country(2)">일본</li>
+                                </ul>
+                                <ul class="start_box_2">
+                                    <li>서울</li>
+                                    <li>대구</li>
+                                    <li>부산</li>
+                                    <li>인천</li>
+                                </ul>
+                                <ul class="start_box_2">
+                                    <li>도쿄</li>
+                                    <li>오사카</li>
+                                    <li>도쿄</li>
+                                    <li>도쿄</li>
+                                    <li>도쿄</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li>
+                            <label for="start"><img src="./images/ico_header_end.png" alt=""></label>
+                            <input type="text" id="start" required autocomplete="off" placeholder="도착지">
+                            <img src="./images/ico_btn_pin.png" alt="">
+                        </li>
+                    </div>
+                    <div class="day">
+                        <input type="text" placeholder="YY-MM-DD">~<input type="text" placeholder="YY-MM-DD">
+                        <img src="./images/ico_btn_date.png" alt="">
+                    </div>
+                    <div class="people">
+                        <p>성인1, 소아0, 유아0 &nbsp;</p>
+                        <img src="./images/ico_booking_passenger.png" alt="">
+                    </div>
+                    <div class="click">
+                        <p>조회</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- 한솔 홈호버 -->
+        <section class="event_top cf w960">
+            <nav>
+                <ul class="cf">
+                    <li><a href="#"><img src="./images/tway/home.PNG" alt=""></a></li>
+                    <li><a href="../tway_main_6.html">HOME&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><span>></span></li>
+                    <li><a href="./event_start.html">&nbsp;&nbsp;&nbsp;이벤트&nbsp;&nbsp;&nbsp;</a></li>
+                    <li class="event"><a href="#"><img src="./images/tway/ico_path_off.png" alt=""></a></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="promotion"><a href="#">이벤트/프로모션 <img src="./images/tway/ico_path_off.png" alt=""></a></li>
+                </ul>
+            </nav>
+            <!-- 호버메뉴 -->
+            <section class="top_slide">
+                <article class="event_slide">
+                    <ul>
+                        <li><a href="#">항공권 예매</a></li>
+                        <li><a href="#">나의 예약</a></li>
+                        <li><a href="#">서비스 안내</a></li>
+                        <li><a href="#">온라인면세점</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">제휴</a></li>
+                    </ul>
+                </article>
+                <article class="promotion_slide">
+                    <ul>
+                        <li>이벤트/프로모션</li>
+                        <li>쿠폰</li>
+                    </ul>
+                </article>
+                
+                <script>
+                    var eventBtn = $('.event');
+                    eventBtn.mouseenter(function(){
+                        $('.event_slide').stop().slideDown();
+                        $('.promotion_slide').stop().slideUp();
+                    })
+                    $('.event_top').mouseleave(function(){
+                        $('.event_slide').stop().slideUp();
+                    })
+                    var promotion_slideBtn = $('.promotion');
+                    promotion_slideBtn.mouseenter(function(){
+                        $('.promotion_slide').stop().slideDown();
+                        $('.event_slide').stop().slideUp();
+                    })
+                    $('.event_top').mouseleave(function(){
+                        
+                        $('.promotion_slide').stop().slideUp();
+                    })
+                </script>
+            </section>
+        </section>
+        <!-- /한솔 홈호버 -->
+        <section class="w1200">
+            <!-- 이벤트 메인 주제 -->
+            <!-- 이벤트 메인 탭 -->
+            <div class="event_tab w1200">
+                <h2>이벤트</h2>
+                <div class="cf">
+                    <p>
+                        <a href="./event_start.html">진행중인 이벤트</a>   
+                    </p>
+                    <p>
+                        <a href="#">종료된 이벤트</a>
+                    </p>
+                </div>
+            </div>
+            <!-- 이벤트 메인 내용 -->
+            <div class="event_main">
+                <ul class="event_sub">
+                    <li>
+                        <img src="./images/img.png" alt="">
+                        <p>[종료]티웨이페이 결제 할인</p>
+                        <p>삼성카드 최대 5만원 할인</p>
+                        <p>2022-09-19 ~ 2022-09-21</p>
+                    </li>
+                    <li>
+                        <img src="./images/img2.png" alt="">
+                        <p>[종료]2022 파워풀 대구 K-POP 콘서트</p>
+                        <p>티웨이항공 X 판타지아 대구 페스티벌</p>
+                        <p>2022-09-16 ~ 2022-09-29</p>
+                    </li>
+                    <li>
+                        <img src="./images/img3.png" alt="">
+                        <p>[종료]국제선 가을여행 특가</p>
+                        <p>해외여행 가기 딱 좋은 9-10월</p>
+                        <p>2022-09-05 ~ 2022-09-18</p>
+                    </li>
+                    <li>
+                        <img src="./images/img4.png" alt="">
+                        <p>[종료]2차 메가얼리버드</p>
+                        <p>항공권 연중 최저가 세일!</p>
+                        <p>2022-09-02 ~ 2022-09-25</p>
+                    </li>
+                    <li>
+                        <img src="./images/img5.png" alt="">
+                        <p>[종료]미리보는 메가얼리버드</p>
+                        <p>9월 5일, 항공권 연중 최저가 오픈</p>
+                        <p>2022-09-01 ~ 2022-09-04</p>
+                    </li>
+                    <li>
+                        <img src="./images/img6.png" alt="">
+                        <p>[종료]몽골 특가+여행 가이드북 증정</p>
+                        <p><리얼 몽골>선착순 50명 지급</p>
+                        <p>2022-08-29 ~ 2022-09-12</p>
+                    </li>
+                    <li>
+                        <img src="./images/img7.png" alt="">
+                        <p>[종료]광주-양양 왕복 예약 프로모션</p>
+                        <p>추가 결제카드 할인에 워터파크 40% 할인까지!</p>
+                        <p>2022-08-24 ~ 2022-09-04</p>
+                    </li>
+                    <li>
+                        <img src="./images/img8.png" alt="">
+                        <p>[종료]더마이프라이스 제휴 혜택</p>
+                        <p>티웨이 고객 전용 특별 혜택</p>
+                        <p>2022-08-19 ~ 2022-08-28</p>
+                    </li>
+                    <li>
+                        <img src="./images/img9.png" alt="">
+                        <p>[종료]취향저격 동남아 특가</p>
+                        <p>편도총액 157,100원부터</p>
+                        <p>2022-08-08 ~ 2022-08-28</p>
+                    </li>
+                </ul>
+                <ul class="event_sub">
+                    <li>
+                        <img src="./images/imge1.png" alt="">
+                        <p>[종료]취향저격 일본 특가</p>
+                        <p>편도총액 86,800원부터</p>
+                        <p>2022-08-08 ~ 2022-08-28</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge2.png" alt="">
+                        <p>[종료]취향저격 괌/사이판/몽골 특가</p>
+                        <p>편도총액 177,100원부터</p>
+                        <p>2022-09-16 ~ 2022-09-29</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge3.png" alt="">
+                        <p>[종료]8월 이달의 혜택</p>
+                        <p>최대 2만원 할인받고 항공권 구매하세요</p>
+                        <p>2022-08-06 ~ 2022-08-31</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge4.png" alt="">
+                        <p>[종료]티웨이 타고 몽골로 떠나라, 알바몬!</p>
+                        <p>울란바타르 왕복 항공권과 여행 경비까지 드려요!</p>
+                        <p>2022-08-05 ~ 2022-08-12</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge5.png" alt="">
+                        <p>[종료]8월 카드 결제 할인</p>
+                        <p>국내선 10% 즉시 할인</p>
+                        <p>2022-08-01 ~ 2022-08-31</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge6.png" alt="">
+                        <p>[종료]국내선 왕복 할인</p>
+                        <p>최대 10% 할인 + 1만원 중복 할인</p>
+                        <p>2022-08-01 ~ 2022-08-14</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge7.png" alt="">
+                        <p>[종료]나는동남아로</p>
+                        <p>여름휴가를 위한 마지막 특가 찬스!</p>
+                        <p>2022-07-19 ~ 2022-07-31</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge8.png" alt="">
+                        <p>[종료]괌으로 신혼 여행 괌</p>
+                        <p>미뤄왔던 신혼 여행, 이제는 떠나요</p>
+                        <p>2022-07-18 ~ 2022-07-31</p>
+                    </li>
+                    <li>
+                        <img src="./images/imge9.png" alt="">
+                        <p>[종료]싱가포르, 몽골 특가</p>
+                        <p>A330 신규취항 노선 이벤트</p>
+                        <p>2022-07-11 ~ 2022-07-31</p>
+                    </li>
+                </ul>
+                <ul class="event_sub">
+                    <li>
+                        <img src="./images/img.png" alt="">
+                        <p>[종료]티웨이페이 결제 할인</p>
+                        <p>삼성카드 최대 5만원 할인</p>
+                        <p>2022-09-19 ~ 2022-09-21</p>
+                    </li>
+                    <li>
+                        <img src="./images/img2.png" alt="">
+                        <p>[종료]2022 파워풀 대구 K-POP 콘서트</p>
+                        <p>티웨이항공 X 판타지아 대구 페스티벌</p>
+                        <p>2022-09-16 ~ 2022-09-29</p>
+                    </li>
+                    <li>
+                        <img src="./images/img3.png" alt="">
+                        <p>[종료]국제선 가을여행 특가</p>
+                        <p>해외여행 가기 딱 좋은 9-10월</p>
+                        <p>2022-09-05 ~ 2022-09-18</p>
+                    </li>
+                    <li>
+                        <img src="./images/img4.png" alt="">
+                        <p>333</p>
+                        <p>기타</p>
+                        <p>날짜</p>
+                    </li>
+                    <li>
+                        <img src="./images/img5.png" alt="">
+                        <p>주제</p>
+                        <p>기타</p>
+                        <p>날짜</p>
+                    </li>
+                    <li>
+                        <img src="./images/img6.png" alt="">
+                        <p>주제</p>
+                        <p>기타</p>
+                        <p>날짜</p>
+                    </li>
+                    <li>
+                        <img src="./images/img7.png" alt="">
+                        <p>주제</p>
+                        <p>기타</p>
+                        <p>날짜</p>
+                    </li>
+                    <li>
+                        <img src="./images/img8.png" alt="">
+                        <p>주제</p>
+                        <p>기타</p>
+                        <p>날짜</p>
+                    </li>
+                    <li>
+                        <img src="./images/img9.png" alt="">
+                        <p>주제</p>
+                        <p>기타</p>
+                        <p>날짜</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 이벤트 하단 -->
+            <div id="event_footer w960">
+                <!-- 라인 -->
+                <div class="line3"></div>
+                <!-- 버튼 -->
+                <div>
+                    <ul class="event_footer_button">
+                        <li><img src="./images/bg_prev2.png" alt=""></li>
+                        <li><img src="./images/bg_prev.png" alt=""></li>
+                        <li class="dot" onclick="ss(1)">1</li>
+                        <li class="dot" onclick="ss(2)">2</li>
+                        <li class="dot" onclick="ss(3)">3</li>
+                        <li class="dot" onclick="ss(4)">4</li>
+                        <li><img src="./images/bg_next.png" alt=""></li>
+                        <li><img src="./images/bg_next2.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <!-- /페이지 넘기기 스크립트 -->
+    </main>
+    <!-- /MAIN -->
+    <!-- FOOTER -->
+    <footer>
+    <section>
+        <div class="footer_top w1200">
+            <nav>
+                <ul>
+                    <li>티웨이항공 예약센터</li>
+                    <li>1688 - 8686</li>
+                    <li>07:00 ~ 19:00</li>
+                </ul>
+            </nav>
+            <nav class="sns">
+                <ul>
+                    <li><a href="#"><img src="./images/tway/ico_fb.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="./images/tway/ico_ins.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="./images/tway/ico_ut.png" alt="인스타그램"></a></li>
+                    <li class="footer_familysite cf">
+                        <p>Family site</p>
+                        <a href="#"><img src="./images/tway/ico_select.png" alt="슬라이더"></a>
+                    </li>
+                </ul>
+                <!-- 패밀리사이트 슬라이드버튼 -->
+                <div class="sns_slide">
+                    <ul>
+                        <li><a href="#">항공훈련센터</a></li>
+                        <li><a href="#">예림당</a></li>
+                        <li><a href="#">예림교육</a></li>
+                        <li><a href="#">스마트베어</a></li>
+                        <li><a href="#">와이슈타인</a></li>
+                        <li><a href="#">예림디지털</a></li>
+                        <li><a href="#">티웨이홀딩스</a></li>
+                        <li><a href="#">해여림빌리지</a></li>
+                    </ul>
+                </div>
+
+                <!-- /패밀리사이트 슬라이드버튼 -->
+            </nav>
+            <!-- 클릭메뉴 -->
+            <script>
+                
+                var familyclick = $('.sns li:nth-child(4)').children('a').children('img');
+                familyclick.click(function(e){
+                    e.preventDefault();
+                    $('.sns_slide').stop().slideToggle(100);
+                });
+            </script>
+            <!-- /클릭메뉴 -->
+        </div>
+    </section>
+    <section>
+        <div class="footer_middle">
+            <div class="fnb w1200">
+                <nav>
+                    <ul>회사소개
+                        <li>티웨이항공 소개</li>
+                        <li>투자정보</li>
+                        <li>채용안내</li>
+                        <li>윤리경영</li>
+                    </ul>
+                    <ul>
+                        <li>광고 홍보 영상</li>
+                        <li>사회 공헌</li>
+                        <li>보도 자료</li>
+                        <li>항공 훈련 센터</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>고객센터
+                        <li>공지사항</li>
+                        <li>유실물센터</li>
+                        <li>고객의 말씀</li>
+                    </ul>
+                    <ul>
+                        <li>제휴문의</li>
+                        <li>FAQ</li>
+                        <li>서식자료실</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>규정 및 약관
+                        <li>여행운송약관</li>
+                        <li>운임 및 수수료</li>
+                        <li>기타 고지사항</li>
+                    </ul>
+                    <ul>
+                        <li>홈페이지 이용약관</li>
+                        <li>개인정보 처리방침</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>기타
+                        <li>항공교통 이용자서비스 계획</li>
+                        <li>피해구제계획</li>
+                        <li>t'agency</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+        <div class="footer_bottom w1200">
+            <h2>
+                <img src="./images/tway/footer_logo.png" alt="하단로고">
+            </h2>
+            <div class="copyright">
+                <ul class="cf">
+                    <li>대표이사 정홍근&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                    <li>사업자등록번호&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li>주소. 서울시 강서구 하늘길 210 국제화물청사 3층</li>
+                </ul>
+                <ul>
+                    <li>통신판매업신고번호. 2017-서울강서-1292&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                    <li>개인정보 관리책임자. 경영본부장 김형이</li>
+                    <li>Copyright ⓒ 2019 t’way Air. All Rights Reserved.</li>
+                </ul>
+            </div>
+            <div class="footer_mark cf">
+                <ul>
+                    <li>
+                        <img src="./images/tway/WA.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/tway/ISMS.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+    </footer>
+    <!-- /FOOTER -->
+</div>
+<script src="./js/event.js"></script>
+<body>
+</html>
